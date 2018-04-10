@@ -52,10 +52,15 @@ a {
 .main-header__nav-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  width: 420px;
   margin: 0;
   padding: 0;
+
   list-style-type: none;
+}
+
+.main-header__nav-list:nth-child(1) {
+  justify-content: flex-end;
 }
 
 .main-header__nav-item {
@@ -65,7 +70,9 @@ a {
 }
 
 .main-header__nav-logo {
-  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  width: 154px;
 }
 
 .main-header__nav-logo img {
