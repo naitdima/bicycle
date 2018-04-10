@@ -193,11 +193,30 @@ a {
 }
 
 .advantage-img {
+  position: relative;
+
   background-color: #616071;
   background-image: url(../img/bg-1-1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.advantage-img::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+.advantage--first .advantage-img::before {
+  width: 113px;
+  height: 118px;
+
+  background-image: url(../img/bicycle-logo.png);
 }
 
 .advantage__descr-wrap {
@@ -263,6 +282,19 @@ a {
   transform: translate(-50%);
 }
 
+.advantage__descr p::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+
+  width: 50px;
+  height: 1px;
+
+  background-color: rgba(53,55,56,0.2);
+  transform: translate(-50%);
+}
+
 .advantage__descr-img {
   min-height: 200px;
 
@@ -282,10 +314,54 @@ a {
 }
 
 .advantage--second .advantage__descr h2::before {
+  width: 32px;
+  height: 32px;
+
   background-image: url(../img/star-icon.png);
 }
 
 .advantage--second .advantage-img {
   background-image: url(../img/bg-2-1.jpg);
+}
+
+.advantage--second .advantage-img::before {
+  width: 177px;
+  height: 152px;
+
+  background-image: url(../img/vintage-logo.png);
+}
+
+.advantage--third {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.advantage--third .advantage__descr-img {
+  background-image: url(../img/bg-3-3.jpg);
+}
+
+.advantage--third .advantage__descr h2::before {
+  width: 23px;
+  height: 41px;
+
+  background-image: url(../img/fork-icon.png);
+}
+
+.advantage--third .advantage-img:first-child {
+  background-image: url(../img/bg-3-1.jpg);
+}
+
+.advantage--third .advantage-img:first-child::before {
+  width: 208px;
+  height: 67px;
+
+  background-image: url(../img/bicycles-logo.png);
+}
+
+.advantage--third .advantage-img:last-child {
+  background-image: url(../img/bg-3-2.jpg);
+}
+
+.advantage--third .advantage-img:last-child::before {
+  display: none;
 }
 
