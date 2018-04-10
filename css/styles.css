@@ -175,3 +175,82 @@ a {
   text-align: center;
 }
 
+.advantage {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #848789;
+}
+
+.advantage-img {
+  background-image: url(../img/bg-1-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #616071;
+}
+
+.advantage__descr-wrap {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantage__descr h2 {
+  margin: 0;
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #353738;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 58px;
+}
+
+.advantage__descr h2::before {
+  position: absolute;
+  content: '';
+  background-image: url("../img/carcass-icon.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 41px;
+  height: 30px;
+}
+
+.advantage__descr p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #848789;
+  font-weight: 400;
+  width: 402px;
+  text-align: justify;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.advantage__descr p::before {
+  position: absolute;
+  content: '';
+  bottom: -108px;
+  left: 50%;
+  transform: translate(-50%);
+  border: 10px solid transparent;
+  border-top-color: #fff;
+}
+
+.advantage__descr-img {
+  background-color: #928b90;
+  background-image: url(../img/bg-1-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+}
+
+
+
