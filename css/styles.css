@@ -44,6 +44,14 @@ a {
   clip: rect(0 0 0 0);
 }
 
+.bg {
+  width: 100%;
+  height: auto;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .main-header {
   min-height: 800px;
   padding-top: 35px;
@@ -165,7 +173,6 @@ a {
 
   background-image: url(../img/chain-icon.png);
   background-repeat: no-repeat;
-  background-position: center center;
   transform: translate(-50%);
 }
 
@@ -197,9 +204,6 @@ a {
 
   background-color: #616071;
   background-image: url(../img/bg-1-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
 
 .advantage-img::before {
@@ -207,8 +211,6 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-
-  background-repeat: no-repeat;
   transform: translate(-50%, -50%);
 }
 
@@ -253,7 +255,6 @@ a {
 
   background-image: url("../img/carcass-icon.png");
   background-repeat: no-repeat;
-  background-position: center top;
   transform: translate(-50%);
 }
 
@@ -300,9 +301,6 @@ a {
 
   background-color: #928b90;
   background-image: url(../img/bg-1-2.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
 }
 
 .advantage--second {
@@ -481,3 +479,152 @@ a {
 .slider__control-item--active {
   background-color: #a9afb3;
 }
+
+.go-store {
+  display: grid;
+  min-height: 534px;
+
+  color: #ffffff;
+
+  background-color: #282f35;
+
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.go-store__saddle {
+  display: grid;
+}
+
+.go-store__saddle-wrap {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+}
+
+.go-store__saddle-wrap .go-store__saddle-img:first-child {
+  background-color: #c8c9ce;
+  background-image: url(../img/bg-4-1.jpg);
+}
+
+.go-store__saddle-wrap .go-store__saddle-img:last-child {
+  background-color: #a98a88;
+  background-image: url(../img/bg-4-2.jpg);
+}
+
+.go-store__saddle-img:last-child {
+  background-color: #92909f;
+  background-image: url(../img/bg-4-3.jpg);
+}
+
+.go-store__rear {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+}
+
+.go-store__rear-img:first-child {
+  background-color: #74646f;
+  background-image: url(../img/bg-5.jpg);
+}
+
+.go-store__rear-img:last-child {
+  background-color: #b3b7ca;
+  background-image: url(../img/bg-6.jpg);
+}
+
+.go-store__shop {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr;
+}
+
+.go-store__shop-link {
+  background-color: #a4868c;
+  background-image: url(../img/bg-8.jpg);
+}
+
+.go-store__shop-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  background-color: rgba(100,194,158,0.8);
+}
+
+.go-store__shop-link a:hover {
+  background-color: rgba(100,194,158,0.7);
+}
+
+.go-store__shop-link span {
+  position: relative;
+
+  display: block;
+  width: 200px;
+  padding-top: 42px;
+
+  text-align: center;
+}
+
+.go-store__shop-link span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 51px;
+  height: 30px;
+
+  background-image: url(../img/bike-icon.png);
+  transform: translate(-50%);
+}
+
+.go-store__shop-wrap {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+}
+
+.go-store__shop-img:first-child {
+  background-color: #eed5d0;
+  background-image: url(../img/bg-7-1.jpg);
+}
+
+.go-store__shop-img:last-child {
+  background-color: #706d83;
+  background-image: url(../img/bg-7-2.jpg);
+}
+
+.discover-shop {
+  background-color: #282f35;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 75px 0;
+}
+
+.discover-shop a {
+  color: #ffffff;
+  display: block;
+  padding: 20px 55px;
+  border: 1px solid rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+
+.discover-shop a:hover {
+  border-color: #ffffff;
+  background-color: rgba(0,0,0,0.2);
+}
+
