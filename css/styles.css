@@ -30,6 +30,20 @@ a {
   box-sizing: inherit;
 }
 
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
 .main-header {
   min-height: 800px;
   padding-top: 35px;
@@ -107,3 +121,57 @@ a {
 .main-header__nav-item:last-child::before {
   display: none;
 }
+
+.page-content {
+  color: #848789;
+
+  background-color: #f7f7f7;
+}
+
+.product-descr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #f7f7f7;
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+
+.product-descr h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #353738;
+  padding-top: 74px;
+  position: relative;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.product-descr h2::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 52px;
+  height: 43px;
+  background-image: url(../img/chain-icon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.product-descr p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  color: #848789;
+  width: 1080px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
