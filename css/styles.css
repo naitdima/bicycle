@@ -382,19 +382,15 @@ a {
 }
 
 .slider__item {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
-.slider__item--second {
-  display: none;
-}
-
-.slider__item--third {
-  display: none;
+.slider__item--active {
+  display: flex;
 }
 
 .slider__item-title {
