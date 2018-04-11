@@ -180,9 +180,6 @@ a {
   width: 1080px;
   margin-bottom: 20px;
 
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 34px;
   text-align: center;
   color: #848789;
 }
@@ -266,7 +263,6 @@ a {
   margin: 0;
   margin-bottom: 18px;
 
-  font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   text-align: justify;
@@ -668,7 +664,6 @@ a {
   padding-right: 10px;
   padding-left: 30px;
 
-  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: rgba(146,146,146,0.8);
@@ -705,8 +700,10 @@ a {
   justify-content: center;
   padding-top: 95px;
   padding-bottom: 95px;
-  background-color: #f7f7f7;
+
   color: #848789;
+
+  background-color: #f7f7f7;
 }
 
 .main-footer__contacts {
