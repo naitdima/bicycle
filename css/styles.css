@@ -681,6 +681,7 @@ a {
 }
 
 .feedback__form button {
+  border: none;
   padding-top: 23px;
   padding-right: 45px;
   padding-bottom: 23px;
